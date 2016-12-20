@@ -7,9 +7,9 @@ public enum HttpClientError: Error {
 }
 
 open class StandardHttpClient: NSObject, HttpClient, URLSessionTaskDelegate {
-    var session: Foundation.URLSession!
-    var dataTask: URLSessionDataTask?
-    var shouldReauthenticate: Bool?
+    public var session: Foundation.URLSession!
+    public var dataTask: URLSessionDataTask?
+    public var shouldReauthenticate: Bool?
     
     override init() {
         super.init()
