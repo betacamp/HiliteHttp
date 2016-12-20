@@ -2,12 +2,12 @@ import Foundation
 import SwiftyJSON
 import HiliteHttp
 
-enum HttpClientError: Error {
+public enum HttpClientError: Error {
     case responseDataIsNil
     case unknown(String?)
 }
 
-class StandardHttpClient: NSObject, HttpClient, URLSessionTaskDelegate {
+public class StandardHttpClient: NSObject, HttpClient, URLSessionTaskDelegate {
     var session: Foundation.URLSession!
     var dataTask: URLSessionDataTask?
     var shouldReauthenticate: Bool?
