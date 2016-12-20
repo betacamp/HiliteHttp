@@ -1,6 +1,5 @@
 import Foundation
 import SwiftyJSON
-import HiliteHttp
 
 public enum HttpClientError: Error {
     case responseDataIsNil
