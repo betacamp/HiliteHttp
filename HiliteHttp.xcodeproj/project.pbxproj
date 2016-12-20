@@ -11,6 +11,7 @@
 		1A9C19E21E08F49700D4525D /* HiliteHttpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C19E11E08F49700D4525D /* HiliteHttpTests.swift */; };
 		1A9C19E41E08F49700D4525D /* HiliteHttp.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A9C19D61E08F49700D4525D /* HiliteHttp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1A9C19EE1E08F4DE00D4525D /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C19ED1E08F4DE00D4525D /* HttpClient.swift */; };
+		1A9C19F11E090B3B00D4525D /* StandardHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C19F01E090B3B00D4525D /* StandardHttpClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		1A9C19E11E08F49700D4525D /* HiliteHttpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiliteHttpTests.swift; sourceTree = "<group>"; };
 		1A9C19E31E08F49700D4525D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A9C19ED1E08F4DE00D4525D /* HttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		1A9C19F01E090B3B00D4525D /* StandardHttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardHttpClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 		1A9C19D51E08F49700D4525D /* HiliteHttp */ = {
 			isa = PBXGroup;
 			children = (
+				1A9C19F01E090B3B00D4525D /* StandardHttpClient.swift */,
 				1A9C19D61E08F49700D4525D /* HiliteHttp.h */,
 				1A9C19ED1E08F4DE00D4525D /* HttpClient.swift */,
 				1A9C19D71E08F49700D4525D /* Info.plist */,
@@ -204,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A9C19EE1E08F4DE00D4525D /* HttpClient.swift in Sources */,
+				1A9C19F11E090B3B00D4525D /* StandardHttpClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
