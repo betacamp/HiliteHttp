@@ -10,6 +10,7 @@
 		1A9C19DD1E08F49700D4525D /* HiliteHttp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9C19D31E08F49700D4525D /* HiliteHttp.framework */; };
 		1A9C19E21E08F49700D4525D /* HiliteHttpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C19E11E08F49700D4525D /* HiliteHttpTests.swift */; };
 		1A9C19E41E08F49700D4525D /* HiliteHttp.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A9C19D61E08F49700D4525D /* HiliteHttp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A9C19EE1E08F4DE00D4525D /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C19ED1E08F4DE00D4525D /* HttpClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		1A9C19DC1E08F49700D4525D /* HiliteHttpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HiliteHttpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A9C19E11E08F49700D4525D /* HiliteHttpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiliteHttpTests.swift; sourceTree = "<group>"; };
 		1A9C19E31E08F49700D4525D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A9C19ED1E08F4DE00D4525D /* HttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				1A9C19D61E08F49700D4525D /* HiliteHttp.h */,
+				1A9C19ED1E08F4DE00D4525D /* HttpClient.swift */,
 				1A9C19D71E08F49700D4525D /* Info.plist */,
 			);
 			path = HiliteHttp;
@@ -149,6 +152,7 @@
 					1A9C19D21E08F49700D4525D = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 2YGXD93C2Y;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					1A9C19DB1E08F49700D4525D = {
@@ -198,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A9C19EE1E08F4DE00D4525D /* HttpClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +327,8 @@
 		1A9C19E81E08F49700D4525D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2YGXD93C2Y;
@@ -334,6 +341,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.birdtree.HiliteHttp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -341,6 +349,8 @@
 		1A9C19E91E08F49700D4525D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2YGXD93C2Y;
@@ -360,6 +370,7 @@
 		1A9C19EB1E08F49700D4525D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 2YGXD93C2Y;
 				INFOPLIST_FILE = HiliteHttpTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -372,6 +383,7 @@
 		1A9C19EC1E08F49700D4525D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 2YGXD93C2Y;
 				INFOPLIST_FILE = HiliteHttpTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
