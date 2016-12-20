@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A9C19DD1E08F49700D4525D /* HiliteHttp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9C19D31E08F49700D4525D /* HiliteHttp.framework */; };
+		1A9C19E21E08F49700D4525D /* HiliteHttpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C19E11E08F49700D4525D /* HiliteHttpTests.swift */; };
+		1A9C19E41E08F49700D4525D /* HiliteHttp.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A9C19D61E08F49700D4525D /* HiliteHttp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A9C19DE1E08F49700D4525D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A9C19CA1E08F49700D4525D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A9C19D21E08F49700D4525D;
+			remoteInfo = HiliteHttp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A9C19D31E08F49700D4525D /* HiliteHttp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HiliteHttp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A9C19D61E08F49700D4525D /* HiliteHttp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HiliteHttp.h; sourceTree = "<group>"; };
+		1A9C19D71E08F49700D4525D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A9C19DC1E08F49700D4525D /* HiliteHttpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HiliteHttpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A9C19E11E08F49700D4525D /* HiliteHttpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiliteHttpTests.swift; sourceTree = "<group>"; };
+		1A9C19E31E08F49700D4525D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A9C19CF1E08F49700D4525D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A9C19D91E08F49700D4525D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A9C19DD1E08F49700D4525D /* HiliteHttp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A9C19C91E08F49700D4525D = {
+			isa = PBXGroup;
+			children = (
+				1A9C19D51E08F49700D4525D /* HiliteHttp */,
+				1A9C19E01E08F49700D4525D /* HiliteHttpTests */,
+				1A9C19D41E08F49700D4525D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A9C19D41E08F49700D4525D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A9C19D31E08F49700D4525D /* HiliteHttp.framework */,
+				1A9C19DC1E08F49700D4525D /* HiliteHttpTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A9C19D51E08F49700D4525D /* HiliteHttp */ = {
+			isa = PBXGroup;
+			children = (
+				1A9C19D61E08F49700D4525D /* HiliteHttp.h */,
+				1A9C19D71E08F49700D4525D /* Info.plist */,
+			);
+			path = HiliteHttp;
+			sourceTree = "<group>";
+		};
+		1A9C19E01E08F49700D4525D /* HiliteHttpTests */ = {
+			isa = PBXGroup;
+			children = (
+				1A9C19E11E08F49700D4525D /* HiliteHttpTests.swift */,
+				1A9C19E31E08F49700D4525D /* Info.plist */,
+			);
+			path = HiliteHttpTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1A9C19D01E08F49700D4525D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A9C19E41E08F49700D4525D /* HiliteHttp.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1A9C19D21E08F49700D4525D /* HiliteHttp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A9C19E71E08F49700D4525D /* Build configuration list for PBXNativeTarget "HiliteHttp" */;
+			buildPhases = (
+				1A9C19CE1E08F49700D4525D /* Sources */,
+				1A9C19CF1E08F49700D4525D /* Frameworks */,
+				1A9C19D01E08F49700D4525D /* Headers */,
+				1A9C19D11E08F49700D4525D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HiliteHttp;
+			productName = HiliteHttp;
+			productReference = 1A9C19D31E08F49700D4525D /* HiliteHttp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1A9C19DB1E08F49700D4525D /* HiliteHttpTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A9C19EA1E08F49700D4525D /* Build configuration list for PBXNativeTarget "HiliteHttpTests" */;
+			buildPhases = (
+				1A9C19D81E08F49700D4525D /* Sources */,
+				1A9C19D91E08F49700D4525D /* Frameworks */,
+				1A9C19DA1E08F49700D4525D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A9C19DF1E08F49700D4525D /* PBXTargetDependency */,
+			);
+			name = HiliteHttpTests;
+			productName = HiliteHttpTests;
+			productReference = 1A9C19DC1E08F49700D4525D /* HiliteHttpTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A9C19CA1E08F49700D4525D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = betacamp;
+				TargetAttributes = {
+					1A9C19D21E08F49700D4525D = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 2YGXD93C2Y;
+						ProvisioningStyle = Automatic;
+					};
+					1A9C19DB1E08F49700D4525D = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 2YGXD93C2Y;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1A9C19CD1E08F49700D4525D /* Build configuration list for PBXProject "HiliteHttp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1A9C19C91E08F49700D4525D;
+			productRefGroup = 1A9C19D41E08F49700D4525D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A9C19D21E08F49700D4525D /* HiliteHttp */,
+				1A9C19DB1E08F49700D4525D /* HiliteHttpTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A9C19D11E08F49700D4525D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A9C19DA1E08F49700D4525D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A9C19CE1E08F49700D4525D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A9C19D81E08F49700D4525D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A9C19E21E08F49700D4525D /* HiliteHttpTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A9C19DF1E08F49700D4525D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A9C19D21E08F49700D4525D /* HiliteHttp */;
+			targetProxy = 1A9C19DE1E08F49700D4525D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1A9C19E51E08F49700D4525D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1A9C19E61E08F49700D4525D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1A9C19E81E08F49700D4525D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2YGXD93C2Y;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = HiliteHttp/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.birdtree.HiliteHttp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1A9C19E91E08F49700D4525D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2YGXD93C2Y;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = HiliteHttp/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.birdtree.HiliteHttp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		1A9C19EB1E08F49700D4525D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2YGXD93C2Y;
+				INFOPLIST_FILE = HiliteHttpTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.birdtree.HiliteHttpTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1A9C19EC1E08F49700D4525D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2YGXD93C2Y;
+				INFOPLIST_FILE = HiliteHttpTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.birdtree.HiliteHttpTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A9C19CD1E08F49700D4525D /* Build configuration list for PBXProject "HiliteHttp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A9C19E51E08F49700D4525D /* Debug */,
+				1A9C19E61E08F49700D4525D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A9C19E71E08F49700D4525D /* Build configuration list for PBXNativeTarget "HiliteHttp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A9C19E81E08F49700D4525D /* Debug */,
+				1A9C19E91E08F49700D4525D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1A9C19EA1E08F49700D4525D /* Build configuration list for PBXNativeTarget "HiliteHttpTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A9C19EB1E08F49700D4525D /* Debug */,
+				1A9C19EC1E08F49700D4525D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A9C19CA1E08F49700D4525D /* Project object */;
+}
