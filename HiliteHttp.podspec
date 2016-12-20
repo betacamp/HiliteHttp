@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HiliteHttp"
-  s.version      = "0.1.1"
+  s.version      = "0.1.1-alpha"
   s.summary      = "HiliteSDK Http library"
 
   # This description is used to generate tags and improve search results.
