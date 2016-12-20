@@ -11,12 +11,12 @@ open class StandardHttpClient: NSObject, HttpClient, URLSessionTaskDelegate {
     public var dataTask: URLSessionDataTask?
     public var shouldReauthenticate: Bool?
     
-    override init() {
+    public override init() {
         super.init()
         session = Foundation.URLSession(configuration: URLSessionConfiguration.default, delegate:self, delegateQueue:nil);
     }
     
-    init(ignoreCache: Bool) {
+    public init(ignoreCache: Bool) {
         super.init()
         session = Foundation.URLSession(configuration: URLSessionConfiguration.ephemeral, delegate:self, delegateQueue:nil);
     }
