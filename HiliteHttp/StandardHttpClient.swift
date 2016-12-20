@@ -22,7 +22,7 @@ public class StandardHttpClient: NSObject, HttpClient, URLSessionTaskDelegate {
         session = Foundation.URLSession(configuration: URLSessionConfiguration.ephemeral, delegate:self, delegateQueue:nil);
     }
     
-    func getFromUrl(_ url: URL, onSuccess: @escaping (Data!)->(), onUnauthorized: (()->())?, onError: ((Error?)->())?, onCancelled: (()->())?) {
+    public func getFromUrl(_ url: URL, onSuccess: @escaping (Data!)->(), onUnauthorized: (()->())?, onError: ((Error?)->())?, onCancelled: (()->())?) {
         dataTask?.cancel();
         
         var request = URLRequest(url: url)
@@ -40,7 +40,7 @@ public class StandardHttpClient: NSObject, HttpClient, URLSessionTaskDelegate {
         dataTask?.resume();
     }
 
-    func postToUrl(_ url: URL!, jsonData: Data!, onSuccess: @escaping (Data!)->(), onUnauthorized: (()->())?, onError: ((Error?)->())?, onCancelled: (()->())?) -> () {
+    public func postToUrl(_ url: URL!, jsonData: Data!, onSuccess: @escaping (Data!)->(), onUnauthorized: (()->())?, onError: ((Error?)->())?, onCancelled: (()->())?) -> () {
         dataTask?.cancel();
 
         var request = URLRequest(url: url)
@@ -61,7 +61,7 @@ public class StandardHttpClient: NSObject, HttpClient, URLSessionTaskDelegate {
         dataTask?.resume();
     }
     
-    func putToUrl(_ url: URL!, jsonData: Data!, onSuccess: @escaping (Data!)->(), onUnauthorized: (()->())?, onError: ((Error?)->())?, onCancelled: (()->())?) {
+    public func putToUrl(_ url: URL!, jsonData: Data!, onSuccess: @escaping (Data!)->(), onUnauthorized: (()->())?, onError: ((Error?)->())?, onCancelled: (()->())?) {
         dataTask?.cancel()
         
         var request = URLRequest(url: url)
@@ -81,7 +81,7 @@ public class StandardHttpClient: NSObject, HttpClient, URLSessionTaskDelegate {
         dataTask?.resume()
     }
     
-    func putToUrl(_ url: URL!, withFileAtUrl: URL!, onSuccess: @escaping (Data!)->(), onUnauthorized: (()->())?, onError: ((Error?)->())?, onCancelled: (()->())?) {
+    public func putToUrl(_ url: URL!, withFileAtUrl: URL!, onSuccess: @escaping (Data!)->(), onUnauthorized: (()->())?, onError: ((Error?)->())?, onCancelled: (()->())?) {
         dataTask?.cancel();
         dataTask = nil
         
@@ -105,27 +105,27 @@ public class StandardHttpClient: NSObject, HttpClient, URLSessionTaskDelegate {
         dataTask?.resume();
     }
     
-    func urlSession(_ session: URLSession, task: URLSessionTask, didCompleteWithError error: Error?) {
+    public func urlSession(_ session: URLSession, task: URLSessionTask, didCompleteWithError error: Error?) {
         // nothing to do
     }
     
-    func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
+    public func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
 
         completionHandler(Foundation.URLSession.AuthChallengeDisposition.useCredential, URLCredential(trust: challenge.protectionSpace.serverTrust!))
     }
     
-    func urlSession(_ session: URLSession, didBecomeInvalidWithError error: Error?) {
+    public func urlSession(_ session: URLSession, didBecomeInvalidWithError error: Error?) {
         // nothing to do
     }
-    func urlSessionDidFinishEvents(forBackgroundURLSession session: URLSession) {
+    public func urlSessionDidFinishEvents(forBackgroundURLSession session: URLSession) {
         // nothing to do
     }
     
-    func urlSession(_ session: URLSession, task: URLSessionTask, didSendBodyData bytesSent: Int64, totalBytesSent: Int64, totalBytesExpectedToSend: Int64) {
+    public func urlSession(_ session: URLSession, task: URLSessionTask, didSendBodyData bytesSent: Int64, totalBytesSent: Int64, totalBytesExpectedToSend: Int64) {
         // print "\(totalBytesSent) / \(totalBytesExpectedToSend)"
     }
     
-    func cancel() {
+    public func cancel() {
         dataTask?.cancel()
     }
     
