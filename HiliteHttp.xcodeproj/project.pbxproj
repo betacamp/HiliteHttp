@@ -12,6 +12,9 @@
 		1A9C19E41E08F49700D4525D /* HiliteHttp.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A9C19D61E08F49700D4525D /* HiliteHttp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1A9C19EE1E08F4DE00D4525D /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C19ED1E08F4DE00D4525D /* HttpClient.swift */; };
 		1A9C19F11E090B3B00D4525D /* StandardHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C19F01E090B3B00D4525D /* StandardHttpClient.swift */; };
+		1A9C19F31E09172C00D4525D /* ReauthenticatingHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C19F21E09172C00D4525D /* ReauthenticatingHttpClient.swift */; };
+		1A9C1A2B1E09218300D4525D /* HttpAuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C1A2A1E09218300D4525D /* HttpAuthenticationService.swift */; };
+		1A9C1A2D1E0921D700D4525D /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C1A2C1E0921D700D4525D /* AuthenticationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +36,9 @@
 		1A9C19E31E08F49700D4525D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A9C19ED1E08F4DE00D4525D /* HttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
 		1A9C19F01E090B3B00D4525D /* StandardHttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardHttpClient.swift; sourceTree = "<group>"; };
+		1A9C19F21E09172C00D4525D /* ReauthenticatingHttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReauthenticatingHttpClient.swift; sourceTree = "<group>"; };
+		1A9C1A2A1E09218300D4525D /* HttpAuthenticationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpAuthenticationService.swift; sourceTree = "<group>"; };
+		1A9C1A2C1E0921D700D4525D /* AuthenticationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,10 +81,13 @@
 		1A9C19D51E08F49700D4525D /* HiliteHttp */ = {
 			isa = PBXGroup;
 			children = (
-				1A9C19F01E090B3B00D4525D /* StandardHttpClient.swift */,
+				1A9C1A2C1E0921D700D4525D /* AuthenticationService.swift */,
+				1A9C1A2A1E09218300D4525D /* HttpAuthenticationService.swift */,
 				1A9C19D61E08F49700D4525D /* HiliteHttp.h */,
 				1A9C19ED1E08F4DE00D4525D /* HttpClient.swift */,
 				1A9C19D71E08F49700D4525D /* Info.plist */,
+				1A9C19F21E09172C00D4525D /* ReauthenticatingHttpClient.swift */,
+				1A9C19F01E090B3B00D4525D /* StandardHttpClient.swift */,
 			);
 			path = HiliteHttp;
 			sourceTree = "<group>";
@@ -206,8 +215,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A9C19F31E09172C00D4525D /* ReauthenticatingHttpClient.swift in Sources */,
 				1A9C19EE1E08F4DE00D4525D /* HttpClient.swift in Sources */,
 				1A9C19F11E090B3B00D4525D /* StandardHttpClient.swift in Sources */,
+				1A9C1A2B1E09218300D4525D /* HttpAuthenticationService.swift in Sources */,
+				1A9C1A2D1E0921D700D4525D /* AuthenticationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +429,7 @@
 				1A9C19E91E08F49700D4525D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A9C19EA1E08F49700D4525D /* Build configuration list for PBXNativeTarget "HiliteHttpTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +438,7 @@
 				1A9C19EC1E08F49700D4525D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

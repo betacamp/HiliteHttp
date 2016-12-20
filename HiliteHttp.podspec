@@ -137,5 +137,6 @@ HiliteHttp module of the Hilite iOS SDK for all things Http
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
   s.dependency "SwiftyJSON"
+  s.dependency "HiliteCore", "~> 0.1.5-alpha"
 
 end
