@@ -6,12 +6,12 @@ public class HttpAuthenticationService: AuthenticationService {
     let httpClient: HttpClient!
     let api:APIv1!
     
-    init() {
+    public init() {
         httpClient = StandardHttpClient()
         api = APIv1();
     }
     
-    init(reauthenticating: Bool) {
+    public init(reauthenticating: Bool) {
         httpClient = reauthenticating ? ReauthenticatingHttpClient() : StandardHttpClient()
         api = APIv1()
     }
