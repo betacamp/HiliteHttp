@@ -6,7 +6,7 @@ public enum HttpClientError: Error {
     case unknown(String?)
 }
 
-public class StandardHttpClient: NSObject, HttpClient, URLSessionTaskDelegate {
+open class StandardHttpClient: NSObject, HttpClient, URLSessionTaskDelegate {
     var session: Foundation.URLSession!
     var dataTask: URLSessionDataTask?
     var shouldReauthenticate: Bool?
