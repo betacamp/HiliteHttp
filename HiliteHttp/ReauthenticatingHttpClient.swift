@@ -6,6 +6,10 @@ open class ReauthenticatingHttpClient: StandardHttpClient {
     let authenticationService = HttpAuthenticationService()
     var retryDataTask: URLSessionDataTask?
     
+    public override init() {
+        super.init()
+    }
+    
     fileprivate func reauthenticate(_ onSuccess: @escaping (UserIdentityCard)->(), onUnauthorized: (()->())?, onError: ((Error?)->())?) {
         Logger.logm()
         
