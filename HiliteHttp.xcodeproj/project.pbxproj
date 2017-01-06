@@ -15,6 +15,14 @@
 		1A9C19F31E09172C00D4525D /* ReauthenticatingHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C19F21E09172C00D4525D /* ReauthenticatingHttpClient.swift */; };
 		1A9C1A2B1E09218300D4525D /* HttpAuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C1A2A1E09218300D4525D /* HttpAuthenticationService.swift */; };
 		1A9C1A2D1E0921D700D4525D /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C1A2C1E0921D700D4525D /* AuthenticationService.swift */; };
+		1AFD22A01E1F1D8A0040B659 /* UploadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD229F1E1F1D8A0040B659 /* UploadService.swift */; };
+		1AFD22A21E1F1DAF0040B659 /* FileUploadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD22A11E1F1DAF0040B659 /* FileUploadService.swift */; };
+		1AFD22A41E1F1DD80040B659 /* HttpUploadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD22A31E1F1DD80040B659 /* HttpUploadService.swift */; };
+		1AFD22A61E1F1DFA0040B659 /* S3FileUploadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD22A51E1F1DFA0040B659 /* S3FileUploadService.swift */; };
+		1AFD22A81E1F20A10040B659 /* UploadAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD22A71E1F20A10040B659 /* UploadAgent.swift */; };
+		1AFD22B81E1F26530040B659 /* PendingUploadsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD22B71E1F26530040B659 /* PendingUploadsService.swift */; };
+		1AFD22BA1E1F26D10040B659 /* AyoAWSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD22B91E1F26D10040B659 /* AyoAWSService.swift */; };
+		1AFD22C81E1F389A0040B659 /* StandardPendingUploadsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD22C71E1F389A0040B659 /* StandardPendingUploadsService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +47,14 @@
 		1A9C19F21E09172C00D4525D /* ReauthenticatingHttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReauthenticatingHttpClient.swift; sourceTree = "<group>"; };
 		1A9C1A2A1E09218300D4525D /* HttpAuthenticationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpAuthenticationService.swift; sourceTree = "<group>"; };
 		1A9C1A2C1E0921D700D4525D /* AuthenticationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		1AFD229F1E1F1D8A0040B659 /* UploadService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadService.swift; sourceTree = "<group>"; };
+		1AFD22A11E1F1DAF0040B659 /* FileUploadService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileUploadService.swift; sourceTree = "<group>"; };
+		1AFD22A31E1F1DD80040B659 /* HttpUploadService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpUploadService.swift; sourceTree = "<group>"; };
+		1AFD22A51E1F1DFA0040B659 /* S3FileUploadService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = S3FileUploadService.swift; sourceTree = "<group>"; };
+		1AFD22A71E1F20A10040B659 /* UploadAgent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadAgent.swift; sourceTree = "<group>"; };
+		1AFD22B71E1F26530040B659 /* PendingUploadsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingUploadsService.swift; sourceTree = "<group>"; };
+		1AFD22B91E1F26D10040B659 /* AyoAWSService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AyoAWSService.swift; sourceTree = "<group>"; };
+		1AFD22C71E1F389A0040B659 /* StandardPendingUploadsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardPendingUploadsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +97,14 @@
 		1A9C19D51E08F49700D4525D /* HiliteHttp */ = {
 			isa = PBXGroup;
 			children = (
+				1AFD22C71E1F389A0040B659 /* StandardPendingUploadsService.swift */,
+				1AFD22B91E1F26D10040B659 /* AyoAWSService.swift */,
+				1AFD22B71E1F26530040B659 /* PendingUploadsService.swift */,
+				1AFD22A71E1F20A10040B659 /* UploadAgent.swift */,
+				1AFD22A51E1F1DFA0040B659 /* S3FileUploadService.swift */,
+				1AFD22A31E1F1DD80040B659 /* HttpUploadService.swift */,
+				1AFD22A11E1F1DAF0040B659 /* FileUploadService.swift */,
+				1AFD229F1E1F1D8A0040B659 /* UploadService.swift */,
 				1A9C1A2C1E0921D700D4525D /* AuthenticationService.swift */,
 				1A9C1A2A1E09218300D4525D /* HttpAuthenticationService.swift */,
 				1A9C19D61E08F49700D4525D /* HiliteHttp.h */,
@@ -215,11 +239,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AFD22A41E1F1DD80040B659 /* HttpUploadService.swift in Sources */,
+				1AFD22A21E1F1DAF0040B659 /* FileUploadService.swift in Sources */,
+				1AFD22A81E1F20A10040B659 /* UploadAgent.swift in Sources */,
+				1AFD22B81E1F26530040B659 /* PendingUploadsService.swift in Sources */,
 				1A9C19F31E09172C00D4525D /* ReauthenticatingHttpClient.swift in Sources */,
 				1A9C19EE1E08F4DE00D4525D /* HttpClient.swift in Sources */,
+				1AFD22A61E1F1DFA0040B659 /* S3FileUploadService.swift in Sources */,
+				1AFD22A01E1F1D8A0040B659 /* UploadService.swift in Sources */,
 				1A9C19F11E090B3B00D4525D /* StandardHttpClient.swift in Sources */,
+				1AFD22C81E1F389A0040B659 /* StandardPendingUploadsService.swift in Sources */,
 				1A9C1A2B1E09218300D4525D /* HttpAuthenticationService.swift in Sources */,
 				1A9C1A2D1E0921D700D4525D /* AuthenticationService.swift in Sources */,
+				1AFD22BA1E1F26D10040B659 /* AyoAWSService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

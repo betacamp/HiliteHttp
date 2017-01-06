@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HiliteHttp"
-  s.version      = "0.1.3-alpha"
+  s.version      = "0.1.4-alpha"
   s.summary      = "HiliteSDK Http library"
 
   # This description is used to generate tags and improve search results.
@@ -137,6 +137,9 @@ HiliteHttp module of the Hilite iOS SDK for all things Http
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
   s.dependency "SwiftyJSON"
-  s.dependency "HiliteCore", "~> 0.1.5-alpha"
+  s.dependency "HiliteCore", "~> 0.1.10-alpha"
+  s.dependency "AWSS3", "~> 2.1.0"
+  s.dependency "AWSCognito", "~> 2.1.0"
+
 
 end
