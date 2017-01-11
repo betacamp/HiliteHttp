@@ -23,6 +23,15 @@
 		1AFD22B81E1F26530040B659 /* PendingUploadsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD22B71E1F26530040B659 /* PendingUploadsService.swift */; };
 		1AFD22BA1E1F26D10040B659 /* AyoAWSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD22B91E1F26D10040B659 /* AyoAWSService.swift */; };
 		1AFD22C81E1F389A0040B659 /* StandardPendingUploadsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD22C71E1F389A0040B659 /* StandardPendingUploadsService.swift */; };
+		1AFD23AC1E26D0B80040B659 /* TaskService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD23AB1E26D0B80040B659 /* TaskService.swift */; };
+		1AFD23AE1E26D1440040B659 /* TaskFeedAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD23AD1E26D1440040B659 /* TaskFeedAgent.swift */; };
+		1AFD23B01E26D1630040B659 /* FiltersByFeedAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD23AF1E26D1630040B659 /* FiltersByFeedAgent.swift */; };
+		1AFD23B21E26D2310040B659 /* FeedAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD23B11E26D2310040B659 /* FeedAgent.swift */; };
+		1AFD23B41E26D3EE0040B659 /* FeedAgentDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD23B31E26D3EE0040B659 /* FeedAgentDelegate.swift */; };
+		1AFD23B61E26D4080040B659 /* FeedItemAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD23B51E26D4080040B659 /* FeedItemAgent.swift */; };
+		1AFD23B81E26D4E90040B659 /* TaskAgentDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD23B71E26D4E90040B659 /* TaskAgentDelegate.swift */; };
+		1AFD23BA1E26D5220040B659 /* TasksAgentDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD23B91E26D5220040B659 /* TasksAgentDelegate.swift */; };
+		1AFD23BC1E26D5770040B659 /* TaskBackedFeedItemAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD23BB1E26D5770040B659 /* TaskBackedFeedItemAgent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +64,15 @@
 		1AFD22B71E1F26530040B659 /* PendingUploadsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingUploadsService.swift; sourceTree = "<group>"; };
 		1AFD22B91E1F26D10040B659 /* AyoAWSService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AyoAWSService.swift; sourceTree = "<group>"; };
 		1AFD22C71E1F389A0040B659 /* StandardPendingUploadsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardPendingUploadsService.swift; sourceTree = "<group>"; };
+		1AFD23AB1E26D0B80040B659 /* TaskService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskService.swift; sourceTree = "<group>"; };
+		1AFD23AD1E26D1440040B659 /* TaskFeedAgent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskFeedAgent.swift; sourceTree = "<group>"; };
+		1AFD23AF1E26D1630040B659 /* FiltersByFeedAgent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersByFeedAgent.swift; sourceTree = "<group>"; };
+		1AFD23B11E26D2310040B659 /* FeedAgent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedAgent.swift; sourceTree = "<group>"; };
+		1AFD23B31E26D3EE0040B659 /* FeedAgentDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedAgentDelegate.swift; sourceTree = "<group>"; };
+		1AFD23B51E26D4080040B659 /* FeedItemAgent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItemAgent.swift; sourceTree = "<group>"; };
+		1AFD23B71E26D4E90040B659 /* TaskAgentDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskAgentDelegate.swift; sourceTree = "<group>"; };
+		1AFD23B91E26D5220040B659 /* TasksAgentDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksAgentDelegate.swift; sourceTree = "<group>"; };
+		1AFD23BB1E26D5770040B659 /* TaskBackedFeedItemAgent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskBackedFeedItemAgent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +115,15 @@
 		1A9C19D51E08F49700D4525D /* HiliteHttp */ = {
 			isa = PBXGroup;
 			children = (
+				1AFD23BB1E26D5770040B659 /* TaskBackedFeedItemAgent.swift */,
+				1AFD23B91E26D5220040B659 /* TasksAgentDelegate.swift */,
+				1AFD23B71E26D4E90040B659 /* TaskAgentDelegate.swift */,
+				1AFD23B31E26D3EE0040B659 /* FeedAgentDelegate.swift */,
+				1AFD23B51E26D4080040B659 /* FeedItemAgent.swift */,
+				1AFD23B11E26D2310040B659 /* FeedAgent.swift */,
+				1AFD23AF1E26D1630040B659 /* FiltersByFeedAgent.swift */,
+				1AFD23AD1E26D1440040B659 /* TaskFeedAgent.swift */,
+				1AFD23AB1E26D0B80040B659 /* TaskService.swift */,
 				1AFD22C71E1F389A0040B659 /* StandardPendingUploadsService.swift */,
 				1AFD22B91E1F26D10040B659 /* AyoAWSService.swift */,
 				1AFD22B71E1F26530040B659 /* PendingUploadsService.swift */,
@@ -241,17 +268,26 @@
 			files = (
 				1AFD22A41E1F1DD80040B659 /* HttpUploadService.swift in Sources */,
 				1AFD22A21E1F1DAF0040B659 /* FileUploadService.swift in Sources */,
+				1AFD23B41E26D3EE0040B659 /* FeedAgentDelegate.swift in Sources */,
 				1AFD22A81E1F20A10040B659 /* UploadAgent.swift in Sources */,
 				1AFD22B81E1F26530040B659 /* PendingUploadsService.swift in Sources */,
 				1A9C19F31E09172C00D4525D /* ReauthenticatingHttpClient.swift in Sources */,
 				1A9C19EE1E08F4DE00D4525D /* HttpClient.swift in Sources */,
 				1AFD22A61E1F1DFA0040B659 /* S3FileUploadService.swift in Sources */,
+				1AFD23B61E26D4080040B659 /* FeedItemAgent.swift in Sources */,
 				1AFD22A01E1F1D8A0040B659 /* UploadService.swift in Sources */,
 				1A9C19F11E090B3B00D4525D /* StandardHttpClient.swift in Sources */,
+				1AFD23B81E26D4E90040B659 /* TaskAgentDelegate.swift in Sources */,
 				1AFD22C81E1F389A0040B659 /* StandardPendingUploadsService.swift in Sources */,
+				1AFD23B01E26D1630040B659 /* FiltersByFeedAgent.swift in Sources */,
+				1AFD23B21E26D2310040B659 /* FeedAgent.swift in Sources */,
+				1AFD23AC1E26D0B80040B659 /* TaskService.swift in Sources */,
 				1A9C1A2B1E09218300D4525D /* HttpAuthenticationService.swift in Sources */,
 				1A9C1A2D1E0921D700D4525D /* AuthenticationService.swift in Sources */,
 				1AFD22BA1E1F26D10040B659 /* AyoAWSService.swift in Sources */,
+				1AFD23BC1E26D5770040B659 /* TaskBackedFeedItemAgent.swift in Sources */,
+				1AFD23BA1E26D5220040B659 /* TasksAgentDelegate.swift in Sources */,
+				1AFD23AE1E26D1440040B659 /* TaskFeedAgent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
