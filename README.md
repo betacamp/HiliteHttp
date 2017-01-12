@@ -24,7 +24,29 @@ import HiliteCore
 import HiliteHttp
 
 class TaskViewController: UIViewController {
-  // TODO
+  let taskAgent = TaskFeedAgent(taskService: HttpTaskService(), delegate: self)
+  
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+    
+    taskAgent.reloadWithOnSuccess(_ onSuccess: @escaping (Array<FeedItemAgent>)->Void, onError: @escaping (Error!)->Void) {
+    
+    let onLoaded = { (loadedFeedItems) in 
+      // do something with loaded items
+    }
+    
+    let onError = { (error) in
+      print(error.localizedDescription)
+    }
+    
+    taskAgent.reloadWithOnSuccess(onLoaded, onError: onError)
+  }
+}
+
+extension TaskViewController: TasksAgentDelegate {
+  func taskAgent(_ taskAgent: TaskFeedAgent, didSelectTask: Task, presentFrom: PresentFrom?) {
+    // do something with selected task
+  }
 }
 
 ```
