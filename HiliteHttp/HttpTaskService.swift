@@ -1,12 +1,15 @@
 import Foundation
 import SwiftyJSON
 import HiliteCore
-import HiliteHttp
 
 open class HttpTaskService: TaskService {
     let httpClient = ReauthenticatingHttpClient()
     let api = APIv1()
     let apiV2 = APIv2.sharedInstance
+    
+    public init() {
+        
+    }
     
     public func loadTasks(_ onSuccess: @escaping (Array<Task>)->Void, onError: (Error)->Void) {
         if let dataTask = httpClient.dataTask {
